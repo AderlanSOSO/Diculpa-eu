@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diculpa eu</title>
+<style>
+  body{background-color: rgb(102, 12, 129);;}
+
+  .painel{
+    background-color: white;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  #sim{
+    height: 40px;
+    width: 60px;
+    background-color: rgb(241, 83, 109);
+    border: 2px solid white;
+    border-radius: 10px;
+    color:white;
+    margin-left: -80px;
+  }
+  #nao{
+    position: absolute;
+    height: 40px;
+    width: 60px;
+    background-color: rgb(241, 83, 109);
+    border:2px solid white;
+    border-radius: 10px;
+    color:white;
+    margin-left: 20px;
+  }
+</style>
+
+
+</head>
+<body>
+
+    <div class="painel">
+        <h1> Diculpa eu mamãe? </h1>
+
+        <img src="https://media.tenor.com/9aX15qAKeQUAAAAi/cute.gif" alt="">
+
+        <h3> pufavozinho</h3>
+
+        <a href="file:///C:/Users/Aderlan/Bigaduh.html"><button id="sim"> Sim! </button></a>
+        <button onmouseover="fuja()" id="nao"> Não! </button>
+
+    </div>
+    <script>
+      function fuja(){
+        var botaonao = document.getElementById("nao")
+
+        var largurajanela = window.innerWidth
+        var alturajanela = window.innerHeight
+
+        var maxX = largurajanela - botaonao.offsetWidth;
+        var maxY = alturajanela - botaonao.offsetHeight;
+
+        var aleatoriox = Math.floor(Math.random()* maxX)
+        var aleatorioy = Math.floor(Math.random()* maxY)
+
+        botaonao.style.left = aleatoriox + "px"
+        botaonao.style,top + aleatorioy + "px"
+
+      }
+    </script>
+
+
+</body>
+</html>
